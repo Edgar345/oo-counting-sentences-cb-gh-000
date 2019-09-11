@@ -15,7 +15,6 @@ class String
   end
 
   def count_sentences
-    count = 0
-    puts self.split(" ")
+    self.scan(/([a-zA-Z, ]+(\?+|\.+|!+))/).size
   end
 end
